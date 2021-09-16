@@ -8,3 +8,5 @@ The program uses 3 libraries in total: datetime, requests and beautifulsoup4
 And in total has 6 functions named: main(), get_page(URL), get_details_of_page(soup), removing_string(lists), get_celcius(fahrenheit) and date_time().
 
 I also made a test program with a library named pytest
+
+OBS: The web site might change in the future, which it will make necessary to change all information related to HTML adn URL in the code.
