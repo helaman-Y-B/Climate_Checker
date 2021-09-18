@@ -69,8 +69,8 @@ def get_details_of_page(soup):
 
     def removing_string(lists):
         """The removing_string gets 1 parameter called lists, which are the lists
-        that has the information from the website.
-        The main purpouse of this function is to convert the numbers that are
+        that has the temperature information from the website.
+        The main purpose of this function is to convert the numbers that are
         a string, to a integer.
         It also remove the "--" sign that appears everyday in a
         specific time."""
@@ -106,7 +106,7 @@ def get_details_of_page(soup):
         that were get from the function called removing_string.
         This function converts the fahrenheit list to a celsius list."""
 
-        # The list when the Celcius will be stored
+        # The list where the Celcius values will be stored
         celcius_list = []
 
         # Get each fahrenheit value from a list
@@ -136,7 +136,7 @@ def get_details_of_page(soup):
 
     for i in range(len(titles)):
 
-        # Print the informations of a 10 days.
+        # Print the informations of 10 days.
         print(
             f"Date--> {title[i]}\n\tMax temperature: {max_celcius[i]:.0f} C°\n\tMin temperature: {min_celcius[i]:.0f} C°\n\tWeather condition: {weather[i]}\n\tWind direction and velocity: {wind[i]}\n"
         )
